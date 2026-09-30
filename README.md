@@ -1,4 +1,4 @@
-# Multi-head skin-permeability predictor
+# Multi-head transdermal predictor
 
 Standalone inference package. Python 3.11 or 3.12; CUDA is used when available, otherwise CPU. Run all commands from this directory.
 
