@@ -30,16 +30,3 @@ python predict.py --input molecules.csv --output predictions_combined.csv \
 AD is available only for `Kp` / `Human`. The default rule is `--ad-rule structure`: a molecule is in-domain when its **maximum Morgan radius-2, 2048-bit Tanimoto similarity to the training structures is ≥ 0.25**. `--ad-min-tanimoto` accepts a value from 0 to 1. `--ad-rule combined` also requires the two model-representation ratios to be below their limits (default 1 each); `--ad-rule none` skips AD. By default, all rows are retained with `ad_status` and `ad_in_domain`; `--ad-only-in-domain` writes only passing rows.
 
 The output includes `regression_z_prediction`, `direction_score`, `prediction_status`, and, for Kp/Human, AD scores and flags. `regression_z_prediction` is unitless; `direction_score` has an endpoint-specific scale. Run `python predict.py --help` for all options. Invalid SMILES and molecules exceeding the encoder's 202-token limit have no prediction.
-
-## Upload to GitHub
-
-The `.pt` weights require Git LFS. Install it **before** adding files to a new repository:
-
-```bash
-git lfs install
-git init
-git add .
-git commit -m "Release multi-head skin predictor"
-```
-
-Then add your GitHub remote and push. A clone needs the LFS weight files to run. The project code is MIT licensed; bundled SMI-TED and fast-transformers licenses are included. Optional checks: `python -m unittest discover -s tests`.
