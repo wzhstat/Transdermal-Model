@@ -1,0 +1,7 @@
+numpy==2.4.6
+pandas==2.3.3
+rdkit==2024.3.2
+torch==2.6.0
+transformers==4.56.2
+regex==2026.5.9
+tqdm==4.68.2

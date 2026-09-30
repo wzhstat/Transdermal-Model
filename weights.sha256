@@ -1,0 +1,3 @@
+67537bf61230c988b2573e3dec26a4139920743f01f7627d35160cc224983d01  weights/multihead_ensemble.pt
+a634c5df1fec7018969be4e34e76fcf6d8d18a9c3591b07578c140ac99561b4d  weights/smi_ted_encoder.pt
+258261e8b5d146afb693636d2f2eb9c1f1a9adda445b8a8ffb035f7138bfe4fa  weights/kp_human_ad.npz
